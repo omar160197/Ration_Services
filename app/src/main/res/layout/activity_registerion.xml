@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background_botom"
+    tools:context=".login_tasks.RegisterionActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+
+        android:paddingLeft="@dimen/_16sdp"
+        app:title="Profile"
+        app:titleTextColor="#ffff" />
+
+    <ImageView
+        android:id="@+id/toolbar_img"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+
+        android:layout_margin="@dimen/_8sdp"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/ed_name_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:background="@drawable/oval_shape2"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="@dimen/_4sdp"
+        android:elevation="@dimen/_8sdp"
+        android:hint="Full Name"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="@dimen/_8sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/ed_email_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_name_s"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:background="@drawable/oval_shape2"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawablePadding="@dimen/_4sdp"
+        android:elevation="@dimen/_8sdp"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="@dimen/_8sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_email_s"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:background="@drawable/oval_shape2"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call_forward"
+        android:drawablePadding="@dimen/_4sdp"
+        android:elevation="@dimen/_8sdp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/_8sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/ed_pass_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_phone"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:background="@drawable/oval_shape2"
+        android:drawableLeft="@android:drawable/ic_partial_secure"
+        android:drawablePadding="@dimen/_4sdp"
+        android:elevation="@dimen/_8sdp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/_8sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/ed_pass_s"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/oval_shape2"
+        android:dropDownWidth="wrap_content"
+        android:elevation="@dimen/_8sdp"
+        android:entries="@array/gender"
+        android:paddingLeft="@dimen/_8sdp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_pass_s"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:layout_toRightOf="@id/gender_spinner"
+        android:background="@drawable/btn_shape"
+        android:elevation="@dimen/_8sdp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="signup"
+        android:text="signup"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp" />
+</RelativeLayout>
+
+
+
+</ScrollView>

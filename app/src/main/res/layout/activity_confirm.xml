@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".seller_tasks.ConfirmActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="-120dp"
+        android:background="@drawable/search_shape">
+
+
+        <TextView
+            android:id="@+id/txt_cart_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_12sdp"
+
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Orders"
+            android:textColor="@color/colorAccent"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel5"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="?actionBarSize"
+        android:background="@color/colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/show_rel"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_light">
+
+
+        <TextView
+            android:id="@+id/txt_confirm_item_price"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/oval_shape"
+            android:paddingLeft="@dimen/_19sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:text="0.0 point"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="confirm"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Confirm order"
+            android:textColor="@color/colorAccent"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

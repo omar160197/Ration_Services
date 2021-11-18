@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/custom_background_botom"
+    tools:context=".helperUi.detect_text">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_signup2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/_42sdp"
+
+                app:title="Inforamtion of Parent"
+                app:titleTextColor="#ffff" />
+
+            <ImageView
+                android:id="@+id/img_unit_qr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_below="@id/toolbar_signup2"
+
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/custom_img"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_no" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_unit_qr"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Select ID Card"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_selectImg_qrcode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/choose_item_shape"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:text="Select Photo"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#ffff" />
+
+
+            <TextView
+                android:id="@+id/test_login22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_selectImg_qrcode2"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:elevation="@dimen/_8sdp"
+                android:text="Inforamtion of Parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#ffff"
+                android:textSize="24sp" />
+
+
+            <View
+                android:id="@+id/v8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/test_login22"
+                android:layout_marginTop="@dimen/_4sdp" />
+
+
+            <EditText
+                android:id="@+id/ed_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v8"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:layout_toRightOf="@+id/txt_id"
+                android:background="@drawable/oval_shape2"
+                android:drawableLeft="@android:drawable/ic_dialog_map"
+                android:drawablePadding="@dimen/_4sdp"
+                android:elevation="@dimen/_8sdp"
+                android:hint="id card" />
+
+            <View
+                android:id="@+id/v9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/ed_id"
+                android:layout_marginTop="@dimen/_4sdp" />
+
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v9"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:background="@drawable/oval_shape2"
+                android:drawableLeft="@android:drawable/ic_menu_compass"
+                android:drawablePadding="@dimen/_4sdp"
+                android:elevation="@dimen/_8sdp"
+                android:hint="name"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btn_add_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/choose_item_shape"
+                android:text="Add Client"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

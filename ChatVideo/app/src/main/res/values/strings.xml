@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatVideo</string>
+    <string name="agora_app_id">8731da8794b34a399a118f38e936a0c4</string>
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <string name="agora_access_token">""</string>
+</resources>

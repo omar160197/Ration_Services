@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/custom_background_botom"
+    tools:context=".client_tasks.profileTaps.overviewActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_signup2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="42dp"
+        app:title="Card Information"
+        app:titleTextColor="#ffff" />
+
+    <TextView
+        android:id="@+id/parentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_signup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:elevation="@dimen/_8sdp"
+
+        android:text="Parent Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#ffff"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/v8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/parentName"
+        android:layout_marginTop="@dimen/_24sdp" />
+
+    <TextView
+        android:id="@+id/test_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v8"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:elevation="@dimen/_8sdp"
+
+        android:text="Id O Card"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#ffff"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/parentIDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_id"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_toRightOf="@+id/txt_id"
+        android:background="@drawable/oval_shape2"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:drawablePadding="@dimen/_4sdp"
+        android:elevation="@dimen/_8sdp"
+        android:enabled="false"
+        android:hint="id card" />
+
+    <View
+        android:id="@+id/v9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/parentIDet"
+        android:layout_marginTop="@dimen/_4sdp" />
+
+    <TextView
+        android:id="@+id/test_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v9"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:elevation="@dimen/_8sdp"
+
+        android:text="Points"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#ffff"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/parentPointset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_points"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:background="@drawable/oval_shape2"
+        android:drawableLeft="@android:drawable/ic_menu_compass"
+        android:drawablePadding="@dimen/_4sdp"
+        android:elevation="@dimen/_8sdp"
+        android:enabled="false"
+        android:hint="points"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/test_login22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parentPointset"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:elevation="@dimen/_8sdp"
+
+        android:text="Children Information"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#ffff"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/test_login22"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/children"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_login22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:elevation="@dimen/_8sdp"
+        android:fontFamily="cursive"
+        android:text="No Childerns"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#ffff"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+</ScrollView>

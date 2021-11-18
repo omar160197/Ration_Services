@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".login_tasks.LoginActivity"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@drawable/login_shape">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/login_ic"
+                    android:layout_width="@dimen/_96sdp"
+                    android:layout_height="@dimen/_96sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_action_cam"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="@dimen/_4sdp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@color/colorAccent"
+                    app:civ_shadow_radius=".1" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_28sdp"
+                    android:layout_toRightOf="@+id/login_ic"
+                    android:text="Login"
+                    android:textColor="@color/colorAccent"
+
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel1"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:background="@drawable/oval_shape2"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="@dimen/_4sdp"
+                android:elevation="@dimen/_8sdp"
+                android:hint="Email"
+                android:inputType="textWebEmailAddress"
+                android:paddingLeft="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/ed_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_email"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:background="@drawable/oval_shape2"
+                android:drawableLeft="@android:drawable/ic_partial_secure"
+                android:drawablePadding="4dp"
+                android:elevation="@dimen/_8sdp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/txt_orget_pass"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_below="@+id/ed_pass"-->
+            <!--        android:layout_alignParentEnd="true"-->
+            <!--        android:layout_marginTop="18dp"-->
+            <!--        android:layout_marginRight="40dp"-->
+            <!--        android:text="Forget Password ?"-->
+            <!--        android:textColor="@android:color/darker_gray" />-->
+
+            <Button
+                android:id="@+id/btn_lohin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_pass"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="77dp"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:background="@drawable/btn_shape"
+                android:elevation="@dimen/_8sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="login"
+                android:text="login"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_acc_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_lohin"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:text="Don`t have account ? "
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_lohin"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:layout_toRightOf="@+id/txt_acc_test"
+                android:onClick="regisiter"
+                android:text="Register"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

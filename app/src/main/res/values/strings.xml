@@ -1,0 +1,8 @@
+<resources>
+    <array name="gender">
+        <item>Client</item>
+        <item>Seller</item>
+    </array>
+    <string name="title_activity_detect_text">detectText</string>
+    <string name="app_name">Ration Service</string>
+</resources>

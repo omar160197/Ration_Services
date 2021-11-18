@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".helperUi.QrActivity">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginBottom="@dimen/_30sdp"></ImageView>
+
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/choose_item_shape"
+        android:paddingLeft="@dimen/_32sdp"
+        android:paddingRight="@dimen/_32sdp"
+        android:text="Save QrCode"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffff" />
+
+
+</RelativeLayout>

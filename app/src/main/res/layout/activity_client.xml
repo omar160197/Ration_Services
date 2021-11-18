@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background_botom"
+    tools:context=".client_tasks.ClientActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="@dimen/_42sdp"
+        app:title="Client"
+        app:titleTextColor="#ffff" />
+
+    <ImageView
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@id/toolbar_signup"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/custom_img"
+        android:scaleType="fitXY"
+        android:src="@drawable/edd" />
+
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:fontFamily="cursive"
+        android:text="Client"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/generateQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/choose_item_shape"
+        android:onClick="generateQrCode"
+        android:text="Generate Qr Code"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+
+        />
+
+    <Button
+        android:id="@+id/gotoprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generateQR"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/choose_item_shape"
+        android:onClick="gotoProfile"
+        android:text="Profile"
+        android:textAllCaps="false"
+        android:textColor="#ffff" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gotoprofile"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/choose_item_shape"
+        android:onClick="logout"
+        android:text="logout"
+        android:textAllCaps="false"
+        android:textColor="#ffff">
+
+    </Button>
+
+
+</RelativeLayout>
